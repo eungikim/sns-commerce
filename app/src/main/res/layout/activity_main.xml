@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
+    android:id="@+id/main_drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
@@ -16,7 +16,7 @@
 
     <com.google.android.material.navigation.NavigationView
         style="@style/NavigationDrawer"
-        android:id="@+id/nav_view"
+        android:id="@+id/main_nav_view"
         android:layout_width="@dimen/navigation_view_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
