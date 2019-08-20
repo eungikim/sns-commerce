@@ -25,6 +25,7 @@ import android.view.Menu;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import kr.eungikim.snscommerce.friend.FriendListFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
         mNavigationView.setNavigationItemSelectedListener(this);
 
-        changeFragment(DashboardFragment.newInstance());
+        changeFragment(FriendListFragment.newInstance());
     }
 
     @Override
@@ -90,13 +91,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
+            changeFragment(FriendListFragment.newInstance());
         } else if (id == R.id.nav_gallery) {
-
         } else if (id == R.id.nav_slideshow) {
-
         } else if (id == R.id.nav_tools) {
-
         }
 
         DrawerLayout drawer = findViewById(R.id.main_drawer_layout);
