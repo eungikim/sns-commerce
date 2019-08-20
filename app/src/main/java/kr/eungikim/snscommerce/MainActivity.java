@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity
         mNavigationView.setNavigationItemSelectedListener(this);
 
         changeFragment(FriendListFragment.newInstance());
+        mNavigationView.setCheckedItem(R.id.nav_home);
     }
 
     @Override
